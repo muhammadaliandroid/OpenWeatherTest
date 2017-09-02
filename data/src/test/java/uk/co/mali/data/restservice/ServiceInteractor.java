@@ -33,17 +33,11 @@ public class ServiceInteractor {
 
 
     private Observable<Data> cachedResult() {
-        Data cacheData = null;
-        if(cache!=null) {
-            cacheData = cache.get("query");
-        }
-        else if (cacheData==null){
-         cacheData = new Data();
-          }
-        else {
-            cacheData = new Data();
-        }
-        return Observable.just(cacheData);
+        return  Observable.just(cache.get("query"))
+                .filter((Data result) ->
+                        result != null
+                );
+
     }
 
     private Observable<Data> networkResult() {
