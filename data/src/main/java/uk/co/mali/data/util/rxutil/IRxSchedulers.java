@@ -1,6 +1,7 @@
 package uk.co.mali.data.util.rxutil;
 
-import rx.Scheduler;
+
+import io.reactivex.Scheduler;
 
 /**
  * Created by alig2 on 01/09/2017.

@@ -3,9 +3,10 @@ package uk.co.mali.data.util.rxutil;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
-import rx.Scheduler;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
+import io.reactivex.Scheduler;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.schedulers.Schedulers;
+
 
 /**
  * Created by alig2 on 01/09/2017.

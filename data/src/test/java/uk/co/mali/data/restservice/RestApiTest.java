@@ -100,7 +100,6 @@ public class RestApiTest {
                 .subscribe(observer);
 
 
-
     }
 
     private boolean returnSize(Data mData) {
